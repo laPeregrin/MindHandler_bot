@@ -1,0 +1,12 @@
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Release\netcoreapp3.1\linux-x64\EfDbLayer.deps.json
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Release\netcoreapp3.1\linux-x64\EfDbLayer.dll
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Release\netcoreapp3.1\linux-x64\EfDbLayer.pdb
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Release\netcoreapp3.1\linux-x64\DTOObjects.dll
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Release\netcoreapp3.1\linux-x64\DTOObjects.pdb
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Release\netcoreapp3.1\linux-x64\EfDbLayer.csprojAssemblyReference.cache
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Release\netcoreapp3.1\linux-x64\EfDbLayer.AssemblyInfoInputs.cache
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Release\netcoreapp3.1\linux-x64\EfDbLayer.AssemblyInfo.cs
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Release\netcoreapp3.1\linux-x64\EfDbLayer.csproj.CoreCompileInputs.cache
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Release\netcoreapp3.1\linux-x64\EfDbLayer.csproj.CopyComplete
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Release\netcoreapp3.1\linux-x64\EfDbLayer.dll
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Release\netcoreapp3.1\linux-x64\EfDbLayer.pdb

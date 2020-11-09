@@ -1,0 +1,15 @@
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Debug\netcoreapp3.1\EfDbLayer.deps.json
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Debug\netcoreapp3.1\EfDbLayer.dll
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.csprojAssemblyReference.cache
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.AssemblyInfoInputs.cache
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.AssemblyInfo.cs
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Debug\netcoreapp3.1\EfDbLayer.pdb
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Debug\netcoreapp3.1\DTOObjects.dll
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Debug\netcoreapp3.1\DTOObjects.pdb
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.csproj.CopyComplete
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.dll
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.pdb
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Debug\netcoreapp3.1\EfDbLayer.runtimeconfig.json
+W:\programs\repos\DTOObjects\EfDbLayer\bin\Debug\netcoreapp3.1\EfDbLayer.runtimeconfig.dev.json
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.genruntimeconfig.cache
+W:\programs\repos\DTOObjects\EfDbLayer\obj\Debug\netcoreapp3.1\EfDbLayer.csproj.CoreCompileInputs.cache

@@ -1,0 +1,14 @@
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Debug\netcoreapp3.1\TelegramBotInitialConfig.deps.json
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Debug\netcoreapp3.1\TelegramBotInitialConfig.dll
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Debug\netcoreapp3.1\TelegramBotInitialConfig.csprojAssemblyReference.cache
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Debug\netcoreapp3.1\TelegramBotInitialConfig.AssemblyInfoInputs.cache
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Debug\netcoreapp3.1\TelegramBotInitialConfig.AssemblyInfo.cs
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Debug\netcoreapp3.1\TelegramBotInitialConfig.pdb
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Debug\netcoreapp3.1\TelegramBotInitialConfig.csproj.CoreCompileInputs.cache
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Debug\netcoreapp3.1\TelegramBotInitialConfig.dll
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Debug\netcoreapp3.1\TelegramBotInitialConfig.pdb
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Debug\netcoreapp3.1\DTOObjects.dll
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Debug\netcoreapp3.1\EfDbLayer.dll
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Debug\netcoreapp3.1\DTOObjects.pdb
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Debug\netcoreapp3.1\EfDbLayer.pdb
+W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Debug\netcoreapp3.1\TelegramBotInitialConfig.csproj.CopyComplete

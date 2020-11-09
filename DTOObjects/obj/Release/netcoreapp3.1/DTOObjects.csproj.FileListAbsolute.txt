@@ -1,0 +1,9 @@
+W:\programs\repos\DTOObjects\DTOObjects\bin\Release\netcoreapp3.1\DTOObjects.deps.json
+W:\programs\repos\DTOObjects\DTOObjects\bin\Release\netcoreapp3.1\DTOObjects.dll
+W:\programs\repos\DTOObjects\DTOObjects\bin\Release\netcoreapp3.1\DTOObjects.pdb
+W:\programs\repos\DTOObjects\DTOObjects\obj\Release\netcoreapp3.1\DTOObjects.csprojAssemblyReference.cache
+W:\programs\repos\DTOObjects\DTOObjects\obj\Release\netcoreapp3.1\DTOObjects.AssemblyInfoInputs.cache
+W:\programs\repos\DTOObjects\DTOObjects\obj\Release\netcoreapp3.1\DTOObjects.AssemblyInfo.cs
+W:\programs\repos\DTOObjects\DTOObjects\obj\Release\netcoreapp3.1\DTOObjects.csproj.CoreCompileInputs.cache
+W:\programs\repos\DTOObjects\DTOObjects\obj\Release\netcoreapp3.1\DTOObjects.dll
+W:\programs\repos\DTOObjects\DTOObjects\obj\Release\netcoreapp3.1\DTOObjects.pdb
