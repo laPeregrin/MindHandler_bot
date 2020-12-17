@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DTOObjects.DataObjects
 {
     public class Letter : DomainObject, ILetter
-    {
+{
         public string Message { get; set; }
         public bool IsPublic { get ; set; }
     }

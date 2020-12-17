@@ -15,7 +15,8 @@ namespace EfDbLayer.EfDbContexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=TelegramStore;Trusted_Connection=True;");
+            optionsBuilder
+                .UseSqlServer("Server=84.38.189.95,30174;Database = telegramData; User ID = 'sa'; Password = 'Ghbdtn010102'; MultipleActiveResultSets = True;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,0 +1,9 @@
+W:\programs\repos\DTOObjects\telegram_command\bin\Release\netcoreapp3.1\telegram_command.deps.json
+W:\programs\repos\DTOObjects\telegram_command\bin\Release\netcoreapp3.1\telegram_command.dll
+W:\programs\repos\DTOObjects\telegram_command\bin\Release\netcoreapp3.1\telegram_command.pdb
+W:\programs\repos\DTOObjects\telegram_command\obj\Release\netcoreapp3.1\telegram_command.csprojAssemblyReference.cache
+W:\programs\repos\DTOObjects\telegram_command\obj\Release\netcoreapp3.1\telegram_command.AssemblyInfoInputs.cache
+W:\programs\repos\DTOObjects\telegram_command\obj\Release\netcoreapp3.1\telegram_command.AssemblyInfo.cs
+W:\programs\repos\DTOObjects\telegram_command\obj\Release\netcoreapp3.1\telegram_command.csproj.CoreCompileInputs.cache
+W:\programs\repos\DTOObjects\telegram_command\obj\Release\netcoreapp3.1\telegram_command.dll
+W:\programs\repos\DTOObjects\telegram_command\obj\Release\netcoreapp3.1\telegram_command.pdb

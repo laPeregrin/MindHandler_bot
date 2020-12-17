@@ -1,9 +1,0 @@
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Release\netcoreapp3.1\TelegramBotInitialConfig.deps.json
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Release\netcoreapp3.1\TelegramBotInitialConfig.dll
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\bin\Release\netcoreapp3.1\TelegramBotInitialConfig.pdb
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Release\netcoreapp3.1\TelegramBotInitialConfig.csprojAssemblyReference.cache
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Release\netcoreapp3.1\TelegramBotInitialConfig.AssemblyInfoInputs.cache
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Release\netcoreapp3.1\TelegramBotInitialConfig.AssemblyInfo.cs
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Release\netcoreapp3.1\TelegramBotInitialConfig.csproj.CoreCompileInputs.cache
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Release\netcoreapp3.1\TelegramBotInitialConfig.dll
-W:\programs\repos\DTOObjects\TelegramBotInitialConfig\obj\Release\netcoreapp3.1\TelegramBotInitialConfig.pdb
