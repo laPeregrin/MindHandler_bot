@@ -16,8 +16,8 @@ namespace TelegramBot.Extensions
             var webhook = $"{configuration["Url"]}api/message/update";
 
             var botClient = new TelegramBotClient(configuration["Token"]);
-            botClient.StartReceiving();
-            return services.AddTransient<ITelegramBotClient>(x => botClient);
+            botClient.SetWebhookAsync(webhook);
+            return services.AddTransient<ITelegramBotClient>(x=>botClient);
         }
     }
 }

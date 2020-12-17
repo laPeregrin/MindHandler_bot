@@ -12,7 +12,7 @@ namespace telegram_command.Commands
 {
     public class TestHelloCommand : TelegramCommand
     {
-        public override string Name => @"start";
+        public override string Name => "start";
 
         public override bool Contains(Message message)
         {

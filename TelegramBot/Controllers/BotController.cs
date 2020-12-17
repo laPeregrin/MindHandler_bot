@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
+using Telegram.Bot.Types.Enums;
 using telegram_command.Abstractions;
 
 namespace TelegramBot.Controllers
@@ -31,6 +32,7 @@ namespace TelegramBot.Controllers
         [HttpGet]
         public async Task<IActionResult> TestWorking()
         {
+            _telegramBotClient.OnMessage += async(x, y) => await _telegramBotClient.SendTextMessageAsync(y.Message.Chat.Id,"sad", ParseMode.Default, false,false,y.Message.MessageId);
             return Ok("Sooo... it is work, hope other all too");
         }
 
