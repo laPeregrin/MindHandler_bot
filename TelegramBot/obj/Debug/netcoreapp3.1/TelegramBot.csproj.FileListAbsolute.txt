@@ -23,8 +23,6 @@ W:\programs\repos\DTOObjects\TelegramBot\obj\Debug\netcoreapp3.1\TelegramBot.csp
 W:\programs\repos\DTOObjects\TelegramBot\obj\Debug\netcoreapp3.1\TelegramBot.dll
 W:\programs\repos\DTOObjects\TelegramBot\obj\Debug\netcoreapp3.1\TelegramBot.pdb
 W:\programs\repos\DTOObjects\TelegramBot\obj\Debug\netcoreapp3.1\TelegramBot.genruntimeconfig.cache
-W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\publish\web.config
-W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
-W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\publish\appsettings.json
-W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\publish\TelegramBot.deps.json
-W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\publish\TelegramBot.runtimeconfig.json
+W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+W:\programs\repos\DTOObjects\TelegramBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

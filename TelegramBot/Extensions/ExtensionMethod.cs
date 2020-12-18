@@ -13,10 +13,10 @@ namespace TelegramBot.Extensions
     {
         public static IServiceCollection AddTelegramBotClient(this IServiceCollection services, IConfiguration configuration)
         {
-            var webhook = $"{configuration["Url"]}api/message/update";
-
+            var webhook = $"{configuration["Url"]}/api/messageUpdate";
+            var webhookTest = "https://760418c84d90.ngrok.io/api/messageUpdate";
             var botClient = new TelegramBotClient(configuration["Token"]);
-            botClient.SetWebhookAsync(webhook);
+            botClient.SetWebhookAsync(webhookTest);
             return services.AddTransient<ITelegramBotClient>(x=>botClient);
         }
     }

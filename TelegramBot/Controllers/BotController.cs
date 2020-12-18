@@ -14,7 +14,7 @@ namespace TelegramBot.Controllers
 {
 
     [ApiController]
-    [Route("api/message/update")]
+    [Route("api")]
     public class BotController : Controller
     {
         private readonly ILogger<BotController> _logger;
@@ -26,17 +26,17 @@ namespace TelegramBot.Controllers
             _telegramBotClient = telegramBotClient;
             _commandService = commandService;
             _logger = logger;
-            _logger.LogInformation("Controller took botClient");
         }
 
         [HttpGet]
+        [Route("messageUpdate")]
         public async Task<IActionResult> TestWorking()
         {
-            _telegramBotClient.OnMessage += async(x, y) => await _telegramBotClient.SendTextMessageAsync(y.Message.Chat.Id,"sad", ParseMode.Default, false,false,y.Message.MessageId);
             return Ok("Sooo... it is work, hope other all too");
         }
 
         [HttpPost]
+        [Route("messageUpdate")]
         public async Task<IActionResult> Post([FromBody] Update update)
         {
             _logger.LogInformation("Working post method!");

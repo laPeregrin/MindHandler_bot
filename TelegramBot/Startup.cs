@@ -1,15 +1,10 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Newtonsoft.Json.Serialization;
 using telegram_command.Abstractions;
 using telegram_command.Services;
 using TelegramBot.Extensions;
@@ -28,11 +23,14 @@ namespace TelegramBot
         public void ConfigureServices(IServiceCollection services)
         {
             services
+                .AddScoped<ICommandService, CommandService>();
+
+            services
                 .AddTelegramBotClient(Configuration);
             services
-                .AddControllers();
-            services
-                .AddScoped<ICommandService, CommandService>();
+                .AddControllers()
+                .AddNewtonsoftJson();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

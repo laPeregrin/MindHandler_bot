@@ -16,7 +16,7 @@ namespace telegram_command.Services
         {
             commands = new List<TelegramCommand>()
             {
-                new TestHelloCommand()
+                new HelloCommand()
             };
         }
 
