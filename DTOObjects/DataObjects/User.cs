@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace DTOObjects.DataObjects
 {
-    public class User : DomainObject
+    public class User
     {
-        public long ChatId { get; set; }  
+        public Guid Id { get; set; }
+        public int TelegramUserId { get; set; }
+        public int ChatId { get; set; }
         public string UserName { get; set; }
-        public IEnumerable<Letter> Letters { get; set; }
+       // public ICollection<Letter> Letters { get; set; }
     }
 }
