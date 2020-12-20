@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace DTOObjects.DataObjects
 {
-    public class Letter
+    public class Letter : DomainObject
     {
         public Guid Id { get; set; }
-        public bool IsPublic { get; set; }
+        public bool IsPublic { get; set; } = false;
         public string Message { get; set; }
+
         public User User { get; set; }
     }
 }

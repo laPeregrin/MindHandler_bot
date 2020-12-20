@@ -14,7 +14,7 @@ namespace TelegramBot.Controllers
 {
 
     [ApiController]
-    [Route("api")]
+    [Route("api/messageUpdate")]
     public class BotController : Controller
     {
         private readonly ILogger<BotController> _logger;
@@ -29,32 +29,38 @@ namespace TelegramBot.Controllers
         }
 
         [HttpGet]
-        [Route("messageUpdate")]
         public async Task<IActionResult> TestWorking()
         {
             return Ok("Sooo... it is work, hope other all too");
         }
 
         [HttpPost]
-        [Route("messageUpdate")]
         public async Task<IActionResult> Post([FromBody] Update update)
         {
-            _logger.LogInformation("Working post method!");
-            if (update == null)
+            try
             {
-                _logger.LogWarning("update is null");
+                if (update == null)
+                {
+                    _logger.LogWarning("update is null");
+                    return Ok();
+                }
+                var message = update.Message;
+                foreach (var command in _commandService.Get())
+                {
+                    if (command.Contains(message))
+                    {
+                        await command.Execute(message, _telegramBotClient);
+                        break;
+                    }
+                }
+                _logger.LogInformation("worked with {e}", update.Message.Chat.Id);
                 return Ok();
             }
-            var message = update.Message;
-            foreach (var command in _commandService.Get())
+            catch(Exception e)
             {
-                if (command.Contains(message))
-                {
-                    await command.Execute(message, _telegramBotClient);
-                    break;
-                }
+                _logger.LogWarning("exception with command", e);
+                return Ok();
             }
-            return Ok();
         }
     }
 }

@@ -1,20 +1,27 @@
 using DTOObjects.DataObjects;
 using EfDbLayer.EfDbContexts;
 using EfDbLayer.Repository.ProxyRepos;
+using EfDbLayer.Repository.ProxyRepos.IndividReps;
 using NUnit.Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace TestRepos
 {
     public class Tests
     {
-        private UserRep _service;
+        private ExplicitUser _userService;
+        private ExplicitLetter _letterService;
+        private EfDbContext _service;
+        private string tesUserId = "1488";
         [SetUp]
         public void Setup()
         {
-            _service = new UserRep();
+            _service = new EfDbContext();
+            _letterService = new ExplicitLetter();
+            _userService = new ExplicitUser();
         }
 
         [Test]
@@ -25,24 +32,79 @@ namespace TestRepos
             bool succes = true;
             var user = new User()
             {
-                Id = Guid.NewGuid(),
-                UserName = "Gadza",
-                TelegramUserId = 123456,
-                ChatId = 0,
+                UserId = tesUserId,
+                Username = "Glad Valakas",
+                FirstName = "Valera",
+                LastName = "Borow"
             };
             //act
             try
             {
                 _service.Add(user);
+                _service.SaveChanges();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 succes = false;
-                Assert.IsTrue(succes, "not valid user");
+                Assert.IsFalse(succes, $"{e.Message}");
+            }
+
+            //assert
+            Assert.IsFalse(succes, "not valid user");
+        }
+        [Test]
+        public async Task AddUser_InputUser_returnTrue()
+        {
+            //arrange
+            Random random = new Random();
+
+            bool succes = true;
+            var user = new User()
+            {
+                UserId = "testId",
+                Username = "Glad Valakas",
+                FirstName = "Valera",
+                LastName = "Borow"
+
+            };
+            //act
+            try
+            {
+                await _userService.RegisterUser(user);
+            }
+            catch (Exception e)
+            {
+                succes = false;
+                Assert.IsTrue(succes, $"{e.Message}");
             }
 
             //assert
             Assert.IsTrue(succes, "not valid user");
         }
+        [Test]
+        public void AddLetter_UserId_returnTrue()
+        {
+            //Arrange
+            var letter = new Letter()
+            {
+                UserId = tesUserId,
+                Message = "пока вы бегали по верхним этажам"
+            };
+            //Act
+            var res = _letterService.AddLetter(letter).Result;
+
+            //Assert
+            Assert.IsTrue(res, "didnt add the letter");
+        }
+
+        [Test]
+        public void GetLetterList_UserId_returnColl()
+        {
+            //action
+            var col = (List<Letter>)_letterService.GetAll(tesUserId).Result;
+            //Assert
+            Assert.IsTrue(col.Count > 0);
+        }
+
     }
 }

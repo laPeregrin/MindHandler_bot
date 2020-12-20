@@ -17,15 +17,14 @@ namespace EfDbLayer.EfDbContexts
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             //options.UseSqlServer("Server=84.38.189.95,30174;Database = telegramData; User ID = 'sa'; Password = 'Ghbdtn010102'; MultipleActiveResultSets = True;");
-            options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Database = Contracts_db; Persist Security Info = false; MultipleActiveResultSets = True; Trusted_Connection = True;");
+            options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Database = Tel_Store_Test; Persist Security Info = false; MultipleActiveResultSets = True; Trusted_Connection = True;");
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
-            modelBuilder
-                .ApplyConfiguration(new UserConfiguration())
-                .ApplyConfiguration(new LetterConfiguration());
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelbuilder);
+
+            modelbuilder.ApplyConfiguration(new UserConfiguration());
         }
     }
 
@@ -33,22 +32,10 @@ namespace EfDbLayer.EfDbContexts
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.HasKey(p => p.Id);
-            builder.HasKey(p => p.TelegramUserId);
+            builder.HasKey(p => new { p.UserId });
 
-            builder.Property(p => p.UserName).IsRequired();
-            builder.Property(p => p.ChatId).IsRequired();
-        }
-    }
-    public class LetterConfiguration : IEntityTypeConfiguration<Letter>
-    {
-        public void Configure(EntityTypeBuilder<Letter> builder)
-        {
-            builder.HasKey(p => p.Id);
-
-            builder.Property(p => p.IsPublic).HasDefaultValue(false);
-            builder.Property(p => p.Message).IsRequired();
-
+            builder.HasMany(x => x.Letters).WithOne(x => x.User).HasForeignKey(x => x.UserId);
+            builder.HasIndex(u => u.UserId).IsUnique();
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using EfDbLayer.Repository.ProxyRepos.IndividReps;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,8 @@ namespace TelegramBot
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services
+                .AddScoped<ExplicitUser>();
             services
                 .AddScoped<ICommandService, CommandService>();
 

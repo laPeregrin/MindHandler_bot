@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EfDbLayer.Repository.ProxyRepos.IndividReps;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,14 @@ namespace telegram_command.Services
     {
         private readonly IEnumerable<TelegramCommand> commands;
 
-        public CommandService()
+        public CommandService(ExplicitUser explicitUser)
         {
             commands = new List<TelegramCommand>()
             {
-                new HelloCommand()
+                new HelloCommand(),
+                new DetailsCommand(),
+                new RegisterCommand(explicitUser),
+                new WriteMessageCommand()
             };
         }
 
